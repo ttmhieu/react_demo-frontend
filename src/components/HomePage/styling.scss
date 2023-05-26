@@ -1,0 +1,41 @@
+.app-container {
+
+  .home-nav-bar {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      height: 100px;
+      align-items: center;
+      .user-action {
+        a {
+          height: 40px;
+        }
+        .nav-bar-item {
+          &__login {
+  
+            &::after{
+              content: '';
+              display: block;
+              width: 4px;
+              height: 4px;
+              margin-left: 22px;
+              margin-top: 15px;
+              border-radius: 50%;
+              background-color: #0d0c22;
+            }
+          }
+      }}
+    }
+  }
+  .back-ground-bar {
+    height: 80px;
+    background: #f3f3f4;
+  }
+  .wrap-content {
+    display: grid;
+    grid-gap: 36px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    max-width: 1375px;
+    margin: 0 auto;
+  }
+}
