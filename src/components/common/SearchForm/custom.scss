@@ -7,12 +7,12 @@
 
 .search__wrapper {
   background-color: #fff;
-  padding: 4px;
-  border-radius: 5px;
+  padding: 0.25rem;
+  border-radius: 0.3125rem;
   transform: translateY(-50%);
-  border: solid;
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
+  box-shadow: 0rem 0.5rem 1.25rem rgba(0,0,0,0.06);
 }
 
 .search-box-1 {
@@ -21,12 +21,12 @@
 }
 
 .search-box-1 input {
-  height: 45px;
+  height: 2.8125rem;
   border: none;
   width: 100%;
-  padding-left: 34px;
-  padding-right: 10px;
-  border-right: 2px solid #eee
+  padding-left: 2.125rem;
+  padding-right: 0.625rem;
+  border-right: 0.125rem solid #eee
 }
 
 .search-box-1 input:focus {
@@ -37,9 +37,9 @@
 
 .search-box-1 i {
   position: absolute;
-  top: 12px;
-  left: 5px;
-  font-size: 24px;
+  top: 0.75rem;
+  left: 0.3125rem;
+  font-size: 1.5rem;
   color: #eee
 }
 
@@ -54,11 +54,11 @@
 }
 
 .search-box-2 input {
-  height: 45px;
+  height: 2.8125rem;
   border: none;
   width: 100%;
-  padding-left: 18px;
-  padding-right: 100px
+  padding-left: 1.125rem;
+  padding-right: 6.25rem
 }
 
 .search-box-2 input:focus {
@@ -69,40 +69,40 @@
 
 .search-box-2 i {
   position: absolute;
-  top: 12px;
-  left: -10px;
-  font-size: 24px;
+  top: 0.75rem;
+  left: -0.625rem;
+  font-size: 1.5rem;
   color: #eee
 }
 
 .search-box-2 button {
   position: absolute;
-  right: 1px;
-  top: 0px;
+  right: 0.0625rem;
+  top: 0rem;
   border: none;
-  height: 45px;
+  height: 2.8125rem;
   background-color: red;
   color: #fff;
-  width: 90px;
-  border-radius: 4px
+  width: 5.625rem;
+  border-radius: 0.25rem
 }
 
-@media (max-width:800px) {
+@media (max-width:50rem) {
   .search-box-1 input {
       border-right: none;
-      border-bottom: 1px solid #eee
+      border-bottom: 0.0625rem solid #eee
   }
 
   .search-box-2 i {
-      left: 4px
+      left: 0.25rem
   }
 
   .search-box-2 input {
-      padding-left: 34px
+      padding-left: 2.125rem
   }
 
   .search-box-2 button {
-      height: 37px;
-      top: 5px
+      height: 2.3125rem;
+      top: 0.3125rem
   }
 }

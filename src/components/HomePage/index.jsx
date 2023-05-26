@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import NavBar from './NavBar';
 import CardForm from '../common/CardForm';
 import SearchForm from '../common/SearchForm';
+import { Product } from '../product/Product';
+import Footer from '../Footer';
 
 
 const data = [
@@ -93,13 +95,8 @@ class HomePage extends Component {
           </div>
 
         </div>
-        <div className='wrap-content mt-3'>
-          {
-            data.map((item) => (
-              <CardForm />
-            ))
-          }
-        </div>
+        <Product />
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,115 @@
+
+.site-footer {
+  a:link {
+    text-decoration: none;
+  }
+  .container-large {
+    padding-right: 72px;
+    padding-left: 72px;
+    max-width: 1680px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+  }
+  background: #fafafb;
+  color: #3d3d4e;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  .footer-main-content {
+    flex-direction: row;
+    padding: 72px 0;
+    display: flex;
+    border-bottom: 1px solid #e7e7e9;
+    .tagline {
+      max-width: 256px;
+      margin: 20px 0;
+    }
+    .social-links-container{
+      .icon {
+        width: 18px;
+        height: 18px;
+        margin-top: 8px;
+        margin-right: 14px;
+      }
+      a {
+        color: #3d3d4e;
+          .accessibility-text {
+            position: absolute;
+            width: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+      }
+    }
+    .links-container {
+      flex-wrap: nowrap;
+      display: flex;
+      .link-heading {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #0d0c22;
+
+      }
+      .link-heading:not(:first-child) {
+        margin-top: 24px;
+      }
+      .link {
+        display: block;
+        margin-top: 16px;
+        color: #3d3d4e;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    
+    }
+    .links-column:first-child {
+      margin-left: 60px;
+    }
+    
+    .links-column {
+      width: 144px;
+      margin-left: 40px;
+    }
+    
+  }
+  .footer-lower-content {
+    flex-direction: row;
+    padding: 44px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #6e6d7a;
+    .total-shots-container {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      .shots-count {
+        color: #0d0c22;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .dribbble-ball {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 8px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  
+  .footer-main-content {
+    display: flex;
+
+    border-bottom: 1px solid #e7e7e9;
+    flex-direction: row;
+    padding: 72px 0;
+  }
+}
