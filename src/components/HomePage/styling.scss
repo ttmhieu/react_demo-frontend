@@ -1,30 +1,58 @@
 .app-container {
-
+  font-family: Helvetica, Arial, sans-serif;
+  a{
+    text-decoration: none;
+  }
   .home-nav-bar {
     &__wrapper {
       display: grid;
       grid-template-columns: auto auto auto;
       height: 6.25rem;
       align-items: center;
+      ul{
+        font-weight: bold;
+        li:last-child{
+          color: #ea4c89;
+        }
+      }
       .user-action {
+        align-items: center;
         a {
+          display: flex;
+          align-items: center;
           height: 2.5rem;
+          color: #000;
         }
         .nav-bar-item {
           &__login {
-  
             &::after{
               content: '';
               display: block;
               width: 0.25rem;
               height: 0.25rem;
               margin-left: 1.375rem;
-              margin-top: 0.9375rem;
               border-radius: 50%;
               background-color: #0d0c22;
             }
           }
-      }}
+          &__signup{
+            color: #000;
+            background-color: #f3f3f4;
+            border: none;
+            &:hover{
+              background-color: #e7e7e9;
+            }
+          }
+          &__hire{
+            color: #fff;
+            background-color: #0d0c22;
+            border: none;
+            &:hover{
+              background-color: #565564;
+            }
+          }
+        }
+      }
     }
   }
   .back-ground-bar {

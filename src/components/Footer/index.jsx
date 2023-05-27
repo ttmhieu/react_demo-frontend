@@ -2,6 +2,7 @@ import React from 'react';
 import './custom.scss';
 import { AiOutlineTwitter, AiFillFacebook, AiOutlineInstagram, AiOutlineDribbble  } from 'react-icons/ai';
 import { BsInstagram, BsPinterest } from 'react-icons/bs'
+import { DribbbleTextIcon, DribbbleTextIconPink } from '../common/CustomIcon';
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
             <div className="footer-main-content">
               <div>
                 <a href="/">
+                  <DribbbleTextIconPink />
                   <span className="accessibility-text">Back to home page</span>
                 </a>
                 <div className="tagline">

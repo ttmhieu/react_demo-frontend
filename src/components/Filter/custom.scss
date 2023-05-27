@@ -1,0 +1,49 @@
+.filter-container {
+  .filter {
+    &__wrapper{
+      justify-content: space-between;
+      ul {
+        list-style-type: none;
+      }
+    }
+    &__views {
+      width: auto;
+      .form-select {
+        border: 1px solid rgba(0,0,0,0.05);
+        border-radius: 8px;
+      }
+    }
+    &__options {
+      ul{
+        li{
+          cursor: pointer;
+        }
+        li.active{
+          border-radius: 8px;
+          background: rgba(13,12,34,0.05);
+         
+        }
+        li:hover{
+          transition: color 200ms ease;
+          color: #0d0c22;
+        }
+      }
+    }
+  }
+  .filter-settings {
+    display: flex;
+    flex: 0 0 200px;
+    align-items: center;
+    justify-content: flex-end;
+    .wrap {
+      border: 1px solid #ccc!important;
+      border-radius: 10px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      span{
+        padding-left: 8px;
+      }
+    }
+  }
+}

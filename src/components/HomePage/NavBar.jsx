@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import './styling.scss';
+import { DribbbleTextIcon } from '../common/CustomIcon';
 
 
 const menuList = [
@@ -16,9 +17,9 @@ const NavBar = () => {
 
 
   return (
-    <div className='home-nav-bar__wrapper align-items-center'>
+    <div className='home-nav-bar__wrapper align-items-center justify-content-between'>
       <div className=''>
-        <ul className='d-flex flex-row gap-5 m-0'>
+        <ul className='d-flex flex-row gap-3 m-0'>
           {
             menuList.map((item) => (
               <li className='d-flex'>{item}</li>
@@ -27,12 +28,12 @@ const NavBar = () => {
         </ul>
       </div>
       <div className=''>
-        <p className='m-0'>Dribble</p>
+        <DribbbleTextIcon fill='none' />
       </div>
-      <div className='user-action d-flex'>
-        <a className='nav-bar-item__login ms-2 d-flex mt-1' href="#">login</a>
-        <a className='nav-bar-item__signup ms-2 btn btn-primary' href="#">sign up</a>
-        <a className='nav-bar-item__logout ms-2 btn btn-secondary' href="#">Hire Creatives</a>
+      <div className='user-action d-flex me-5'>
+        <a className='nav-bar-item__login ms-2 mt-1' href="#">Log in</a>
+        <a className='nav-bar-item__signup ms-2 btn btn-primary' href="#">Sign up</a>
+        <a className='nav-bar-item__hire ms-2 btn btn-secondary' href="#">Hire Creatives</a>
       </div>
     </div>
 

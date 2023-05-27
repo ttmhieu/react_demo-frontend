@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
-import CardForm from '../common/CardForm';
-import SearchForm from '../common/SearchForm';
-import { Product } from '../product/Product';
+import SearchForm from '../SearchForm';
+import { UserPost } from '../UserPost/UserPost';
 import Footer from '../Footer';
+import Filter from '../Filter';
 
 
 const data = [
@@ -63,39 +63,21 @@ class HomePage extends Component {
                 <span >Discover 10,000+ sign in designs for inspiration</span>
               </div>
                 {/* related  */}
-                <div>
-                  <p style={{ textAlign: 'center'}}>
-                  Related: sign up log in login sign in page sign in form signup
+                <div className='d-flex justify-content-center'> 
+                  <p style={{ textAlign: 'center'}} >
+                     Related:  &nbsp;
+                  </p>
+                  <p style={{ textAlign: 'center', color:'#ea4c89'}}>
+                    sign up log in login sign in page sign in form signup
                   </p>
                 </div>
             
               </div>
-              <div class="container px-5 pt-5 mx-0">
-
-                <div class="row">
-                  <div className='col-4'>
-                    <select className="form-select" aria-label="Default select example">
-                      <option selected>Popular</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <hr />
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div className='col-7'>
-
-                  <ul className='d-flex flex-row gap-5 m-0'>
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                  </div>
-                </div>
-              </div>
+              <Filter />
           </div>
 
         </div>
-        <Product />
+        <UserPost />
         <Footer />
       </div>
     );
